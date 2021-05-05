@@ -13,7 +13,7 @@ RUN apt-get update && \
         apt-get -y install --no-install-recommends curl screen procps && \
         curl -sL https://deb.nodesource.com/setup_14.x | bash - && \
         apt-get -y install --no-install-recommends npm && \
-        npm install --global --unsafe-perm thelounge && \
+        npm install --global --unsafe-perm thelounge@next && \
         npm install npm@latest -g && \
         rm -rf /var/lib/apt/lists/*
 
