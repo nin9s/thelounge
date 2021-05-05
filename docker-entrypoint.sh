@@ -1,5 +1,6 @@
 #!/bin/bash
 
+echo "preparing ..."
 echo "set PUID to ${PUID}"
 usermod -u ${PUID} ${USER}
 echo "set PGID to ${PGID}"
