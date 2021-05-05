@@ -7,10 +7,10 @@ usermod -g ${PGID} ${USER}
 echo "set umask to ${UMASK}"
 umask ${UMASK}
 
-echo "checking for user file ..."
-if [ !  "$(ls -A  "$DIR" )" ];
-        then echo "empty" ;
-fi
+#echo "checking for user file ..."
+#if [ !  "$(ls -A  "$DIR" )" ];
+#       then echo "empty" ;
+#fi
 
 echo "fixing permissions ..."
 chown -R ${PUID}:${PGID} ${THELOUNGE_HOME}
