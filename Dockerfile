@@ -1,11 +1,13 @@
 FROM debian:buster-slim
 
+ENV VER=v4.3.0-pre.2
 ENV THELOUNGE_HOME="/config"
 ENV PORT 9000
 ENV PUID=1000
 ENV PGID=1000
 ENV UMASK=0000
 ENV USER=thelounge
+
 
 HEALTHCHECK --interval=5s --timeout=3s CMD curl --fail http://localhost:9000 || exit 1
 
